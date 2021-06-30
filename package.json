@@ -1,0 +1,25 @@
+{
+  "name": "eventopia",
+  "version": "1.0.0",
+  "description": "Eventopia is my final project made for the Globant Bootcamp, this is a small application to register to events and to check the participants of the event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatocuellar/eventopia.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "javascript",
+    "react-router"
+  ],
+  "author": "Renato_Cuéllar <hola@renatocuellar.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renatocuellar/eventopia/issues"
+  },
+  "homepage": "https://github.com/renatocuellar/eventopia#readme"
+}
