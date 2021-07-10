@@ -1,0 +1,13 @@
+.not-found-page {
+  font-size: 10rem;
+  margin: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .not-found-page .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

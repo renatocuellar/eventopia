@@ -32,6 +32,8 @@ a.link-unstyled:hover {
   color: #fff;
   background-color: #7dcd40;
   border-color: #7dcd40;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):hover {
