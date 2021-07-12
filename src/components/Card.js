@@ -2,6 +2,7 @@ import React from 'react';
 
 import './styles/Card.css';
 import eventLogo from '../images/9.png';
+import Gravatar from './Gravatar'
 
 class Card extends React.Component {
   render() {

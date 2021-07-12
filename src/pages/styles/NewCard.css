@@ -5,8 +5,11 @@
   background-repeat: repeat;
   margin-bottom: 1rem;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-hero {
-  max-width: 150px;
+  max-width: 250px;
 }

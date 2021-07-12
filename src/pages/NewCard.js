@@ -36,11 +36,11 @@ class NewCard extends React.Component {
           <div className="row">
             <div className="col-6">
               <Card
-                firstName={this.state.form.firstName}
-                lastName={this.state.form.lastName}
-                twitter={this.state.form.twitter}
-                jobTitle={this.state.form.jobTitle}
-                email={this.state.form.email}
+                firstName={this.state.form.firstName || 'FIRST NAME'}
+                lastName={this.state.form.lastName || 'LAST NAME'}
+                twitter={this.state.form.twitter || 'twitter'}
+                jobTitle={this.state.form.jobTitle || 'Job Title'}
+                email={this.state.form.email || 'EMAIL'}
                 avatarUrl="https://www.gravatar.com/avatar/6b67c9cfc28b912801998ca3be6082f5?d=identicon"
               />
             </div>

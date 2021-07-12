@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './styles/Cards.css';
 import eventLogo from '../images/9.png';
 import CardsList from '../components/CardList';
+import PageLoading from '../components/PageLoading';
+import PageError from '../components/PageError';
 import api from '../api';
 
 class Cards extends React.Component {
@@ -30,11 +32,11 @@ class Cards extends React.Component {
 
   render() {
     if (this.state.loading === true) {
-      return 'Loading...';
+      return <PageLoading />;
     }
 
     if (this.state.error) {
-      return `Error: ${this.state.error.message}`;
+      return <PageError error={this.state.error} />;
     }
 
     return (
