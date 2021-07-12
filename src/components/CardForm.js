@@ -1,6 +1,6 @@
 import React from 'react';
 
-class BadgeForm extends React.Component {
+class CardForm extends React.Component {
   handleClick = e => {
     console.log('Button was clicked');
   };
@@ -73,7 +73,7 @@ class BadgeForm extends React.Component {
           </div>
 
           <button onClick={this.handleClick} className="btn btn-primary">
-            Save
+            Create
           </button>
         </form>
       </container>
@@ -81,4 +81,4 @@ class BadgeForm extends React.Component {
   }
 }
 
-export default BadgeForm;
+export default CardForm;

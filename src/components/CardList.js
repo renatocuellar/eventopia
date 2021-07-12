@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './styles/BadgesList.css';
+import './styles/CardsList.css';
 
-class BadgesListItem extends React.Component {
+class CardsListItem extends React.Component {
   render() {
     return (
-      <div className="BadgesListItem">
+      <div className="CardsListItem">
         <img
-          className="BadgesListItem__avatar"
+          className="CardsListItem__avatar"
           src={this.props.badge.avatarUrl}
           alt={`${this.props.badge.firstName} ${this.props.badge.lastName}`}
         />
@@ -25,15 +25,15 @@ class BadgesListItem extends React.Component {
   }
 }
 
-class BadgesList extends React.Component {
+class CardsList extends React.Component {
   render() {
     return (
-      <div className="BadgesList">
+      <div className="CardsList">
         <ul className="list-unstyled">
           {this.props.badges.map(badge => {
             return (
               <li key={badge.id}>
-                <BadgesListItem badge={badge} />
+                <CardsListItem badge={badge} />
               </li>
             );
           })}
@@ -43,4 +43,4 @@ class BadgesList extends React.Component {
   }
 }
 
-export default BadgesList;
+export default CardsList;

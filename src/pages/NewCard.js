@@ -2,10 +2,10 @@ import React from 'react';
 
 import './styles/NewCard.css';
 import expoLogo from '../images/9.png';
-import Badge from '../components/Card';
-import BadgeForm from '../components/CardForm';
+import Card from '../components/Card';
+import CardForm from '../components/CardForm';
 
-class BadgeNew extends React.Component {
+class NewCard extends React.Component {
   state = {
     form: {
       firstName: '',
@@ -28,25 +28,25 @@ class BadgeNew extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className="BadgeNew__hero">
+        <section className="NewCard__hero">
           <img className="img-hero" src={expoLogo} alt="Logo" />
         </section>
 
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <Badge
+              <Card
                 firstName={this.state.form.firstName}
                 lastName={this.state.form.lastName}
                 twitter={this.state.form.twitter}
                 jobTitle={this.state.form.jobTitle}
                 email={this.state.form.email}
-                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
+                avatarUrl="https://www.gravatar.com/avatar/6b67c9cfc28b912801998ca3be6082f5?d=identicon"
               />
             </div>
 
             <div className="col-6">
-              <BadgeForm
+              <CardForm
                 onChange={this.handleChange}
                 formValues={this.state.form}
               />
@@ -58,4 +58,4 @@ class BadgeNew extends React.Component {
   }
 }
 
-export default BadgeNew;
+export default NewCard;
