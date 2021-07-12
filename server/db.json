@@ -447,7 +447,8 @@
       "email": "test@test.com",
       "jobTitle": "Frontend Engineer",
       "twitter": "test",
-      "id": "VEQEQ00"
+      "id": "VEQEQ00",
+      "avatarUrl": "https://www.gravatar.com/avatar/4f164ea9a61e8d28e6b83a356d3ff5ae?d=identicon"
     },
     {
       "firstName": "test",
@@ -455,7 +456,8 @@
       "email": "test@test.com",
       "jobTitle": "Frontend Engineer",
       "twitter": "test",
-      "id": "squgU1i"
+      "id": "squgU1i",
+      "avatarUrl": "https://www.gravatar.com/avatar/4f164ea9a61e8d28e6b83a356d3ff5ae?d=identicon"
     },
     {
       "firstName": "test",
@@ -463,7 +465,8 @@
       "email": "matt@gmail.com",
       "jobTitle": "test engineer",
       "twitter": "tester2",
-      "id": "5vCTU0l"
+      "id": "5vCTU0l",
+      "avatarUrl": "https://www.gravatar.com/avatar/4f164ea9a61e8d28e6b83a356d3ff5ae?d=identicon"
     }
   ]
 }

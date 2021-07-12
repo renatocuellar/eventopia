@@ -51,7 +51,7 @@ function CardsList(props) {
 
   if (filteredCards.length === 0) {
     return (
-      <div>
+      <section>
         <div className="form-group">
           <label>Filter Cards</label>
           <input
@@ -68,7 +68,7 @@ function CardsList(props) {
         <Link className="btn btn-primary" to="/cards/new">
           Create new card
         </Link>
-      </div>
+      </section>
     );
   }
 

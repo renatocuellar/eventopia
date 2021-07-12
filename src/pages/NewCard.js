@@ -61,7 +61,7 @@ class NewCard extends React.Component {
                 twitter={this.state.form.twitter || 'Twitter'}
                 jobTitle={this.state.form.jobTitle || 'Job Title'}
                 email={this.state.form.email || 'Email'}
-                avatarUrl="https://www.gravatar.com/avatar/b4f66246e7ff34e9a4a176fb58d6ecda?d=identicon"
+                avatarUrl="https://www.gravatar.com/avatar/94d093eda664addd6e450d7e9881bcad?s=32&d=identicon&r=PG"
               />
             </div>
 
