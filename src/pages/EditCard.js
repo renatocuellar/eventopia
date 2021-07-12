@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './styles/NewCard.css';
+import './styles/EditCard.css';
 import expoLogo from '../images/9.png';
 import Card from '../components/Card';
 import CardForm from '../components/CardForm';
 import PageLoading from '../components/PageLoading'
 import api from '../api';
 
-class NewCard extends React.Component {
+class EditCard extends React.Component {
   state = {
     loading: false,
     error: null,
@@ -48,7 +48,7 @@ class NewCard extends React.Component {
     }
     return (
       <React.Fragment>
-        <section className="NewCard__hero">
+        <section className="EditCard__hero">
           <img className="img-hero" src={expoLogo} alt="Logo" />
         </section>
 
@@ -79,4 +79,4 @@ class NewCard extends React.Component {
   }
 }
 
-export default NewCard;
+export default EditCard;
