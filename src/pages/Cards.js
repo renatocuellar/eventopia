@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './styles/Badges.css';
+import './styles/Cards.css';
 import eventLogo from '../images/9.png';
-import BadgesList from '../components/BadgesList';
+import BadgesList from '../components/CardList';
 
 class Badges extends React.Component {
   constructor(props) {

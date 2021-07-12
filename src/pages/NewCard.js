@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './styles/BadgeNew.css';
+import './styles/NewCard.css';
 import expoLogo from '../images/9.png';
-import Badge from '../components/Badge';
-import BadgeForm from '../components/BadgeForm';
+import Badge from '../components/Card';
+import BadgeForm from '../components/CardForm';
 
 class BadgeNew extends React.Component {
   state = {
