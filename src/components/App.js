@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Layout from './Layout';
 import Home from '../pages/Home';
-import Badges from '../pages/Cards';
-import BadgeNew from '../pages/NewCard';
+import Cards from '../pages/Cards';
+import CardNew from '../pages/NewCard';
 import NotFound from '../pages/NotFound';
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/badges" component={Badges} />
-          <Route exact path="/badges/new" component={BadgeNew} />
+          <Route exact path="/cards" component={Cards} />
+          <Route exact path="/cards/new" component={CardNew} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

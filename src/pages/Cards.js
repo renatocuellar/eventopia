@@ -92,7 +92,7 @@ class Cards extends React.Component {
 
         <main className="Cards__container">
           <section className="Cards__buttons">
-            <Link to="/badges/new" className="btn btn-primary">
+            <Link to="/cards/new" className="btn btn-primary">
               New Attendant
             </Link>
           </section>
