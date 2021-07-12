@@ -26,32 +26,82 @@ class CardsListItem extends React.Component {
   }
 }
 
-class CardsList extends React.Component {
-  render() {
-    if (this.props.cards.length === 0) {
-      return (
-        <section>
-          <h3> We did not found any Card</h3>
-          <link className="btn btn-primary" to="/cards/new">
-            Create New
-          </link>
-        </section>
-      )
-    }
+function useSearchCards(cards) {
+  const [query, setQuery] = React.useState('');
+  const [filteredCards, setFilteredCards] = React.useState(cards);
+
+  React.useMemo(() => {
+    const result = cards.filter(card => {
+      return `${card.firstName} ${card.lastName}`
+        .toLowerCase()
+        .includes(query.toLowerCase());
+    });
+
+    setFilteredCards(result);
+  }, [cards, query]);
+
+  return { query, setQuery, filteredCards };
+}
+
+
+function CardsList(props) {
+  const cards = props.cards;
+
+  const { query, setQuery, filteredCards } = useSearchCards(cards);
+
+  if (filteredCards.length === 0) {
     return (
-      <div className="CardsList">
-        <ul className="list-unstyled">
-          {this.props.cards.map(card => {
-            return (
-              <li key={card.id}>
-                <CardsListItem card={card} />
-              </li>
-            );
-          })}
-        </ul>
+      <div>
+        <div className="form-group">
+          <label>Filter Cards</label>
+          <input
+            type="text"
+            className="form-control"
+            value={query}
+            onChange={e => {
+              setQuery(e.target.value);
+            }}
+          />
+        </div>
+
+        <h3>No cards were found</h3>
+        <Link className="btn btn-primary" to="/cards/new">
+          Create new card
+        </Link>
       </div>
     );
   }
+
+  return (
+    <div className="CardsList">
+      <div className="form-group">
+        <label>Filter Cards</label>
+        <input
+          type="text"
+          className="form-control"
+          value={query}
+          onChange={e => {
+            setQuery(e.target.value);
+          }}
+        />
+      </div>
+
+      <ul className="list-unstyled">
+        {filteredCards.map(card => {
+          return (
+            <li key={card.id}>
+              <Link
+                className="text-reset text-decoration-none"
+                to={`/cards/${card.id}`}
+              >
+                <CardsListItem card={card} />
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
 }
 
 export default CardsList;
