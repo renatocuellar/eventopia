@@ -3,7 +3,7 @@ const path = require('path');
 const faker = require('faker');
 const md5 = require('md5');
 
-function createBadges(limit = 50) {
+function createCards(limit = 50) {
   const result = [];
 
   for (let i = 0; i < limit; i++) {
@@ -27,7 +27,7 @@ function createBadges(limit = 50) {
 
 function main() {
   const data = {
-    badges: createBadges(),
+    cards: createCards(),
   };
 
   fs.writeFileSync(
